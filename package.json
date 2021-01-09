@@ -28,6 +28,13 @@
     "webpack-cli": "^4.3.1",
     "webpack-dev-server": "^3.11.1"
   },
+  "eslintConfig": {
+    "extends": "eda",
+    "root": true,
+    "ignorePatterns": [
+      "bundle.js"
+    ]
+  },
   "homepage": "https://github.com/shellymutu-grigg/oAuth2.0-demo#readme",
   "dependencies": {
     "cors": "^2.8.5",
