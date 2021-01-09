@@ -2,7 +2,7 @@
 const path = require('path')
 
 module.exports = {
-  entry: path.join(__dirname, 'index.js'), // Entry point for our project
+  entry: path.join(__dirname, '../server/index.js'), // Entry point for our project
   output: {
     path: path.join(__dirname, '../server/public'),
     filename: 'bundle.js'

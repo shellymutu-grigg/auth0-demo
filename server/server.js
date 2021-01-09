@@ -1,6 +1,6 @@
 const path = require('path')
-require('dotenv').config({ path: path.join(__dirname, '.env') })
-const cors = require('cors')
+// require('dotenv').config({ path: path.join(__dirname, '.env') })
+// const cors = require('cors')
 const express = require('express')
 
 // const authRoutes = require('./routes/auth')
@@ -8,7 +8,7 @@ const express = require('express')
 const server = express()
 
 server.use(express.json())
-server.use(cors({ origin: 'http://localhost:8080' }))
+// server.use(cors({ origin: 'http://localhost:8080' }))
 server.use(express.static(path.join(__dirname, 'public')))
 
 // server.use('/api/v1', authRoutes)
