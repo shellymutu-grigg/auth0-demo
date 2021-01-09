@@ -1,5 +1,6 @@
 import React from 'react'
-// import { signInUser } from './helpers/loginHelper'
+
+import Header from './Header'
 
 class Login extends React.Component {
     state = {
@@ -16,12 +17,12 @@ class Login extends React.Component {
 
       handleClick = (e) => {
         e.preventDefault()
-        // signInUser(this.state, this.props.history.push)
       }
 
       render () {
         return (
           <>
+            <Header />
             <div className="inputBox">
               <form>
                 <input
@@ -46,7 +47,6 @@ class Login extends React.Component {
                   onChange={this.handleChange}
                 ></input>
               </form>
-              <a className="password-forgot" href="#">Have you forgotten your password?</a>
             </div>
             <div className="input-wrapper">
               <input

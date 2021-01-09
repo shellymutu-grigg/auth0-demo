@@ -1,0 +1,85 @@
+body {
+  width: 75%;
+  margin: auto;
+  background-color: #ddf2fc;
+  text-emphasis-color: #000000;
+}
+
+h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+h2 {
+margin-top: 30px;
+text-align: center;
+}
+
+p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: large;
+}
+
+.object {
+  margin-top: 40px;
+  font-size: x-large;
+  font-weight: 300;
+}
+
+.object p:last-child {
+  display: flex;
+  justify-content: space-between;
+  color: darkgray;
+}
+
+.object .object-name {
+  font-style: normal;
+}
+
+.object .object-description {
+  font-style: italic;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  animation: LabelOnLoad 1s forwards 0s ease;
+}
+@keyframes LabelOnLoad {
+  0% {
+    transform: rotate(0) translateY(-19px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+  top: -19px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}

@@ -1,20 +1,33 @@
 import React from 'react'
-import { Router, Route, Redirect } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
-// import { setUser } from '../actions/user'
-// import { isAuthenticated, getDecodedToken } from '../auth'
 
-// Import components
-// import WaitingIndicator from './WaitingIndicator'
+// import Header from './Header'
 import Login from './Login'
+import PendingIndicator from './PendingIndicator'
 import Landing from './Landing'
+// import LoadObjects from './LoadObjects'
+// import ObjectForm from './ObjectForm'
 
+// const mapStateToProps = (state) => {
+//   return {
+//     target: state.navigation
+//   }
+// }
+
+// Parent App component that holds Header and child components
+// const App = (props) => (
+//   <div className='app'>
+//     <Header />
+//     {props.target === 'home'
+//       ? <> <LoadObjects /> <PendingIndicator /> </> : <ObjectForm />}
+//   </div>
+// )
+
+// export default connect(mapStateToProps)(App)
 class App extends React.Component {
   componentDidMount () {
-    // if (isAuthenticated()) {
-    //   const { username, isAdmin } = getDecodedToken()
-    //   this.props.dispatch(setUser({ username, isAdmin }))
-    // }
+
   }
 
   render () {
@@ -22,13 +35,11 @@ class App extends React.Component {
       <>
         <div className='app'>
           <main>
-            {/* <WaitingIndicator /> */}
-            <Router>
-              <Route exact path="/">
-                <Redirect to="/login"/>
-              </Route>
-            </Router>
-            <Route path="/login" component={Login}/>
+            <PendingIndicator />
+            <Route exact path="/">
+              <Redirect to="/"/>
+            </Route>
+            <Route path="/" component={Login}/>
             <Route exact path='/landing/:username' component={Landing} />
           </main>
         </div>
