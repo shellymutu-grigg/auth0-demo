@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Header from './Header'
-
 class Login extends React.Component {
     state = {
       username: '',
@@ -22,7 +20,6 @@ class Login extends React.Component {
       render () {
         return (
           <>
-            <Header />
             <div className="inputBox">
               <form>
                 <input
