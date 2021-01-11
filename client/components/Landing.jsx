@@ -10,10 +10,10 @@ export default class Landing extends React.Component {
       <>
         <div className='wrapper'></div>
         <div className='box'>
-          <h1 className='cardTitle'>Please enter credentials to login via OAuth 2.0</h1>
+          <h1 className='cardTitle'>Please select login to use Auth0 authentication</h1>
           {/* <ErrorMessage /> */}
           <Link to="/login"><button className="log-in">Log In</button></Link>
-          <Link to="/register"><button className="register">Register</button></Link>
+          {/* <Link to="/register"><button className="register">Register</button></Link> */}
           <Route exact path="/login" component={props => <Login {...props} />}/>
           <Route exact path="/register" component={props => <Register {...props} />} />
         </div>
