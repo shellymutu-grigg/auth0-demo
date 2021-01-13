@@ -1,7 +1,6 @@
 {
   "name": "auth0-demo",
   "version": "0.0.1",
-  "description": "Repo to demonstrate understanding of Auth0",
   "dependencies": {
     "@auth0/auth0-react": "^1.2.0",
     "react": "^16.14.0",
@@ -14,19 +13,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shellymutu-grigg/oAuth2.0-demo.git"
-  },
-  "keywords": [
-    "react",
-    "Auth0"
-  ],
-  "author": "shellymutu-grigg",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shellymutu-grigg/auth0-demo/issues"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,6 +31,5 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2"
-  },
-  "homepage": "https://github.com/shellymutu-grigg/auth0-demo#readme"
+  }
 }
