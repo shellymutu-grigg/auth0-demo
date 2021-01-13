@@ -15,3 +15,51 @@
 .result-block-container .result-block {
   opacity: 1;
 }
+
+.box {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 400px;
+  width: 800px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 10);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  border: solid white 1px;
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+   opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+   }
+   100% {
+    opacity: 1;
+  }
+}
+
+.cardTitle{
+  font-size: 3.3rem;
+  color: white;
+  text-align: center;
+}
+
+.landingText{
+  width: 100%;
+  text-align: center;
+  color: white;
+}
