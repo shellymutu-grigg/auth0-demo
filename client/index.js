@@ -10,7 +10,6 @@ import thunkMiddleware from 'redux-thunk'
 // Import our reducers
 import index from './reducers/index'
 import App from './components/App'
-import './index'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const store = createStore(index,

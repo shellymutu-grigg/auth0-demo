@@ -2,13 +2,13 @@
   "name": "oauth2.0-demo",
   "version": "0.0.1",
   "description": "Repo to demonstrate understanding of OAuth2.0",
-  "main": "server/index.js",
+  "main": "index.js",
   "scripts": {
     "dev:client": "webpack --watch --config client/webpack.config.js",
     "dev:server": "nodemon --watch server",
     "dev": "run-p dev:client dev:server",
     "knex": "knex --knexfile server/db/knexfile.js",
-    "webpack:server": "webpack-dev-server --hot --inline --content-base server/public --config client/webpack.config.js",
+    "webpack:server": "webpack-dev-server --hot --inline --content-base public --config client/webpack.config.js",
     "test": "jest --watchAll --verbose",
     "start": "node server",
     "lint": "eslint ."
